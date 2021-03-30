@@ -12,9 +12,6 @@ class MyClient(discord.Client):
         await message.channel.send(message.content)
 
 client = MyClient()
-
 load_dotenv()
-
 TOKEN = os.getenv("TOKEN")
-
 client.run(TOKEN)
